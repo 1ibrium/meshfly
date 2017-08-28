@@ -185,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 34623070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.48, y: 8.2, z: -26.16}
-  m_LocalScale: {x: 1, y: 8, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -200,7 +200,6 @@ GameObject:
   - component: {fileID: 202357977}
   - component: {fileID: 202357976}
   - component: {fileID: 202357975}
-  - component: {fileID: 202357978}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -262,19 +261,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &202357978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 202357974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d63359b25f6224690d839784804e9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pivotTransform: {fileID: 782639341}
-  terrain: {fileID: 202357976}
 --- !u!1 &497615918
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +440,7 @@ GameObject:
   - component: {fileID: 782639340}
   - component: {fileID: 782639339}
   - component: {fileID: 782639338}
+  - component: {fileID: 782639342}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -519,9 +506,22 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782639337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.36, y: 27.83, z: 2.85}
+  m_LocalPosition: {x: 18.48, y: 25.3, z: 3.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782639342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782639337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff1a4bc5c167c440a9c5c48953180f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mf: {fileID: 782639340}
+  terrain: {fileID: 202357976}

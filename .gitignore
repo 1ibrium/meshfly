@@ -21,10 +21,11 @@
 x64/
 x86/
 bld/
+[Tt]emp/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-
+Library/
 # Visual Studio 2015 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
