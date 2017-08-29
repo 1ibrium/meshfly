@@ -31,8 +31,6 @@ namespace XY
         public static bool IsVertexUnderTerrain(Terrain inTerr, Vector3 pos)
         {
             float height = GetHeight(inTerr, pos);
-            Debug.Log("height:" + height);
-
             if (float.IsNaN(height))
             {
                 return false;
